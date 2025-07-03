@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle">Bloom with ARVEA by Malika - Votre Boutique Beauté Naturelle</title>
+    <meta name="description" data-key="metaDescription" content="Découvrez la boutique en ligne ARVEA Nature avec Bloom by Malika. Explorez nos cosmétiques naturels, parfums et compléments à base d'Argan et Aloe Vera. Achetez maintenant !">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #28a745; /* Vibrant green for natural feel */
+            border-radius: 9999px;
+        }
+
+        /* Styles for the "Bloom with ARVEA by Malika" visual name */
+        .name-part {
+            display: inline-block;
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0.2rem;
+            opacity: 1; /* Keep visible for static page */
+        }
+
+        .bloom-text {
+            font-size: 3.5rem; /* Larger for emphasis */
+            color: #28a745; /* Vibrant green for "Bloom" */
+            text-shadow: 2px 2px 8px rgba(40, 167, 69, 0.4);
+        }
+
+        .with-arvea-text {
+            font-size: 2.2rem;
+            color: #4a4a4a; /* Darker grey for contrast */
+        }
+
+        .by-malika-text {
+            font-size: 1.8rem;
+            color: #6c757d; /* Lighter grey for personal touch */
+            font-weight: 500;
+        }
+
+        /* Responsive adjustments for the name */
+        @media (max-width: 768px) {
+            .bloom-text {
+                font-size: 2.5rem;
+            }
+            .with-arvea-text {
+                font-size: 1.8rem;
+            }
+            .by-malika-text {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bloom-text {
+                font-size: 2rem;
+            }
+            .with-arvea-text {
+                font-size: 1.4rem;
+            }
+            .by-malika-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
+        <div class="text-2xl md:text-3xl font-bold text-gray-800">
+            <span class="text-green-600">Bloom</span> with ARVEA <span class="text-green-600">by Malika</span>
+        </div>
+        <nav class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium transition duration-300" data-key="navHome">Accueil</a>
+            <a href="affiliation.html" class="text-gray-600 hover:text-green-600 font-medium transition duration-300" data-key="navAffiliation">Affiliation</a>
+            <a href="#categories" class="text-gray-600 hover:text-green-600 font-medium transition duration-300" data-key="navCategories">Catégories</a>
+            <a href="#avantages" class="text-gray-600 hover:text-green-600 font-medium transition duration-300" data-key="navBenefits">Avantages ARVEA</a>
+        </nav>
+        <button class="md:hidden p-2 text-gray-600 hover:text-green-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+        <!-- Language Switcher -->
+        <div class="flex space-x-2 ml-4">
+            <button class="lang-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-1 px-3 rounded-full text-sm" data-lang="fr">FR</button>
+            <button class="lang-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-1 px-3 rounded-full text-sm" data-lang="ar">AR</button>
+            <button class="lang-btn bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-1 px-3 rounded-full text-sm" data-lang="en">EN</button>
+        </div>
+    </header>
+
+    <!-- Hero Section - Store Focus -->
+    <section class="relative bg-gradient-to-r from-green-500 to-green-700 text-white py-20 px-6 md:px-12 text-center overflow-hidden rounded-lg m-4">
+        <div class="absolute inset-0 opacity-10">
+            <!-- Background pattern for natural feel -->
+            <svg class="w-full h-full" fill="currentColor" viewBox="0 0 100 100">
+                <pattern id="pattern-circles" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <circle cx="10" cy="10" r="1.5" fill="white" />
+                </pattern>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
+            </svg>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg" data-key="heroStoreTitle">
+                Découvrez l'Éclat Naturel : Votre Boutique ARVEA vous Attend !
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90" data-key="heroStoreText">
+                Plongez dans un monde de soins authentiques à base d'Huile d'Argan et d'Aloe Vera. Qualité, pureté, et bien-être à portée de clic.
+            </p>
+            <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-key="heroStoreButton">
+                Accéder à la Boutique ARVEA
+            </a>
+        </div>
+    </section>
+
+    <!-- Product Categories Highlight Section -->
+    <section id="categories" class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-md">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-key="categoriesTitle">Nos Essentiels ARVEA : Une Beauté qui Rayonne</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category Card 1: Soins Visage & Corps -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/e0f2f1/28a745?text=Visage+%26+Corps" alt="Soins Visage et Corps ARVEA" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="category1Title">Soins Visage & Corps</h3>
+                    <p class="text-gray-600 mb-4" data-key="category1Text">
+                        Nourrissez votre peau avec nos formules riches en Argan et Aloe Vera pour une hydratation profonde et un éclat sain.
+                    </p>
+                    <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="text-green-600 hover:text-green-800 font-medium" data-key="categoryButton">Découvrir la gamme</a>
+                </div>
+                <!-- Category Card 2: Soins Capillaires Naturels -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/e0f2f1/28a745?text=Cheveux" alt="Soins Capillaires ARVEA" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="category2Title">Soins Capillaires Naturels</h3>
+                    <p class="text-gray-600 mb-4" data-key="category2Text">
+                        Transformez vos cheveux avec des produits conçus pour la force, la brillance et la vitalité, sans compromis.
+                    </p>
+                    <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="text-green-600 hover:text-green-800 font-medium" data-key="categoryButton">Découvrir la gamme</a>
+                </div>
+                <!-- Category Card 3: Parfums Envoûtants -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/e0f2f1/28a745?text=Parfums" alt="Parfums ARVEA" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="category3Title">Parfums Envoûtants</h3>
+                    <p class="text-gray-600 mb-4" data-key="category3Text">
+                        Laissez votre sillage raconter une histoire de nature et d'élégance avec nos fragrances uniques.
+                    </p>
+                    <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="text-green-600 hover:text-green-800 font-medium" data-key="categoryButton">Découvrir la gamme</a>
+                </div>
+                <!-- Category Card 4: Vitalité et Bien-être (Compléments) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/150x150/e0f2f1/28a745?text=Compléments" alt="Compléments Alimentaires ARVEA" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="category4Title">Vitalité et Bien-être</h3>
+                    <p class="text-gray-600 mb-4" data-key="category4Text">
+                        Soutenez votre corps de l'intérieur avec nos compléments alimentaires pour une énergie et une santé optimales.
+                    </p>
+                    <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="text-green-600 hover:text-green-800 font-medium" data-key="categoryButton">Découvrir la gamme</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose ARVEA Section (Benefits) -->
+    <section id="avantages" class="py-16 px-6 md:px-12 bg-gray-100 m-4 rounded-lg shadow-md">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-key="whyChooseTitle">Pourquoi Choisir ARVEA Nature via Bloom by Malika ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-green-600">✨</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="benefit1Title">Qualité Authentique</h3>
+                    <p class="text-gray-600" data-key="benefit1Text">
+                        Produits formulés avec des ingrédients naturels d'exception : Huile d'Argan et Aloe Vera.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-green-600">🌿</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="benefit2Title">Engagement Éthique</h3>
+                    <p class="text-gray-600" data-key="benefit2Text">
+                        Une marque qui respecte la nature et votre bien-être, avec des pratiques durables.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-green-600">🛒</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="benefit3Title">Simplicité d'Achat</h3>
+                    <p class="text-gray-600" data-key="benefit3Text">
+                        Accédez facilement à toute la gamme ARVEA via notre lien d'affiliation sécurisé.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <div class="text-5xl mb-4 text-green-600">🤝</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-key="benefit4Title">Support & Conseils</h3>
+                    <p class="text-gray-600" data-key="benefit4Text">
+                        Bénéficiez de nos conseils personnalisés pour choisir les produits parfaits pour vos rituels.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Product Focused -->
+    <section id="temoignages" class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-md">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-12 text-gray-800" data-key="storeTestimonialsTitle">Ce que Nos Clients Disent de Nos Produits</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg text-left">
+                    <p class="text-gray-700 italic mb-4" data-key="storeTestimonial1Text">
+                        "Ma peau n'a jamais été aussi belle et hydratée depuis que j'utilise les soins visage ARVEA. Un vrai coup de cœur pour l'huile d'Argan !"
+                    </p>
+                    <p class="font-semibold text-gray-800" data-key="storeTestimonial1Author">- Amira S., Alger</p>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-lg text-left">
+                    <p class="text-gray-700 italic mb-4" data-key="storeTestimonial2Text">
+                        "Les shampoings ARVEA ont redonné vie à mes cheveux, ils sont plus forts et brillants. Je suis impressionnée par les résultats naturels."
+                    </p>
+                    <p class="font-semibold text-gray-800" data-key="storeTestimonial2Author">- Lina K., Koweït</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action Section -->
+    <section class="py-16 px-6 md:px-12 bg-gradient-to-r from-green-600 to-green-800 text-white m-4 rounded-lg shadow-md text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg" data-key="finalCtaTitle">Prêt(e) à Transformer Votre Routine Beauté ?</h2>
+        <p class="text-lg md:text-xl mb-8 opacity-90" data-key="finalCtaText">
+            Cliquez ci-dessous pour explorer la collection complète ARVEA Nature et commencer votre épanouissement.
+        </p>
+        <a href="https://arvea-nature.com/fr?ref=58786838" target="_blank" class="bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105" data-key="finalCtaButton">
+            Je Visite la Boutique ARVEA
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 text-center rounded-t-lg">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-4" data-key="footerCopyright">&copy; 2025 Bloom with ARVEA by Malika. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <!-- Social media icons (no data-key needed if they are just icons) -->
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.048 1.05.056 1.627.246 2.062.465.457.237.796.551 1.141.896.347.345.65.684.897 1.14.219.435.408 1.006.464 2.06.049 1.013.051 1.368.051 3.797s-.002 2.784-.048 3.797c-.056 1.05-.246 1.627-.465 2.062-.237.457-.551.796-.896 1.141-.345.347-.684.65-1.14.897-.435.219-1.006.408-2.06.464-1.013.049-1.368.051-3.797.051s-2.784-.002-3.797-.048c-1.05-.056-1.627-.246-2.062-.465-.457-.237-.796-.551-1.141-.896-.347-.345-.65-.684-.897-1.14-.219-.435-.408-1.006-.464-2.06-.049-1.013-.051-1.368-.051-3.797s.002-2.784.048-3.797c.056-1.05.246-1.627.465-2.062.237-.457.551-.796.896-1.141.345-.347.684-.65.897-1.14.219-.435.408-1.006.464-2.06.049-1.013.051-1.368.051-3.797zm-1.257 0c-.047 2.43-.047 2.755 0 3.763.04.892.21 1.45.337 1.776.14.362.33.66.59.92.26.26.558.45.92.59.326.127.884.297 1.776.337 1.008.047 1.333.047 3.763 0 2.43-.047 2.755-.047 3.763 0 .892.04 1.45.21 1.776.337.362.14.66.33.92.59.26.26.45.558.59.92.127.326.297-.884.337-1.776.047-1.008.047-1.333 0 3.763-.047 2.43-.047 2.755 0 3.763.04.892.21 1.45.337 1.776.14.362.33.66.59.92.26.26.45.558.59.92.127.326.297-.884.337-1.776.047-1.008.047-1.333 0-3.763zm-1.257 0a3.797 3.797 0 100-7.594 3.797 3.797 0 000 7.594zm0 1.257a5.054 5.054 0 110-10.108 5.054 5.054 0 010 10.108z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-500" data-key="footerContact">Contactez-nous : contact@arveabymalika.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dictionnaire de traductions
+        const translations = {
+            fr: {
+                pageTitle: "Bloom with ARVEA by Malika - Votre Boutique Beauté Naturelle",
+                metaDescription: "Découvrez la boutique en ligne ARVEA Nature avec Bloom by Malika. Explorez nos cosmétiques naturels, parfums et compléments à base d'Argan et Aloe Vera. Achetez maintenant !",
+                navHome: "Accueil",
+                navAffiliation: "Affiliation",
+                navCategories: "Catégories",
+                navBenefits: "Avantages ARVEA",
+                heroStoreTitle: "Découvrez l'Éclat Naturel : Votre Boutique ARVEA vous Attend !",
+                heroStoreText: "Plongez dans un monde de soins authentiques à base d'Huile d'Argan et d'Aloe Vera. Qualité, pureté, et bien-être à portée de clic.",
+                heroStoreButton: "Accéder à la Boutique ARVEA",
+                categoriesTitle: "Nos Essentiels ARVEA : Une Beauté qui Rayonne",
+                category1Title: "Soins Visage & Corps",
+                category1Text: "Nourrissez votre peau avec nos formules riches en Argan et Aloe Vera pour une hydratation profonde et un éclat sain.",
+                category2Title: "Soins Capillaires Naturels",
+                category2Text: "Transformez vos cheveux avec des produits conçus pour la force, la brillance et la vitalité, sans compromis.",
+                category3Title: "Parfums Envoûtants",
+                category3Text: "Laissez votre sillage raconter une histoire de nature et d'élégance avec nos fragrances uniques.",
+                category4Title: "Vitalité et Bien-être",
+                category4Text: "Soutenez votre corps de l'intérieur avec nos compléments alimentaires pour une énergie et une santé optimales.",
+                categoryButton: "Découvrir la gamme",
+                whyChooseTitle: "Pourquoi Choisir ARVEA Nature via Bloom by Malika ?",
+                benefit1Title: "Qualité Authentique",
+                benefit1Text: "Produits formulés avec des ingrédients naturels d'exception : Huile d'Argan et Aloe Vera.",
+                benefit2Title: "Engagement Éthique",
+                benefit2Text: "Une marque qui respecte la nature et votre bien-être, avec des pratiques durables.",
+                benefit3Title: "Simplicité d'Achat",
+                benefit3Text: "Accédez facilement à toute la gamme ARVEA via notre lien d'affiliation sécurisé.",
+                benefit4Title: "Support & Conseils",
+                benefit4Text: "Bénéficiez de nos conseils personnalisés pour choisir les produits parfaits pour vos rituels.",
+                storeTestimonialsTitle: "Ce que Nos Clients Disent de Nos Produits",
+                storeTestimonial1Text: "\"Ma peau n'a jamais été aussi belle et hydratée depuis que j'utilise les soins visage ARVEA. Un vrai coup de cœur pour l'huile d'Argan !\"",
+                storeTestimonial1Author: "- Amira S., Alger",
+                storeTestimonial2Text: "\"Les shampoings ARVEA ont redonné vie à mes cheveux, ils sont plus forts et brillants. Je suis impressionnée par les résultats naturels.\"",
+                storeTestimonial2Author: "- Lina K., Koweït",
+                finalCtaTitle: "Prêt(e) à Transformer Votre Routine Beauté ?",
+                finalCtaText: "Cliquez ci-dessous pour explorer la collection complète ARVEA Nature et commencer votre épanouissement.",
+                finalCtaButton: "Je Visite la Boutique ARVEA",
+                footerCopyright: "&copy; 2025 Bloom with ARVEA by Malika. Tous droits réservés.",
+                footerContact: "Contactez-nous : contact@arveabymalika.com"
+            },
+            ar: {
+                pageTitle: "تفتح مع أرفيا لمليكة - متجرك للجمال الطبيعي",
+                metaDescription: "اكتشف متجر أرفيا الطبيعة عبر الإنترنت مع Bloom by Malika. استكشف مستحضرات التجميل الطبيعية والعطور والمكملات الغذائية القائمة على الأرغان والألوفيرا. اشترِ الآن!",
+                navHome: "الرئيسية",
+                navAffiliation: "الانتساب",
+                navCategories: "الفئات",
+                navBenefits: "مزايا أرفيا",
+                heroStoreTitle: "اكتشف الجمال الطبيعي: متجر أرفيا في انتظارك!",
+                heroStoreText: "انغمس في عالم من العناية الأصيلة القائمة على زيت الأرغان والألوفيرا. الجودة والنقاء والعافية على بعد نقرة واحدة.",
+                heroStoreButton: "الوصول إلى متجر أرفيا",
+                categoriesTitle: "أساسيات أرفيا: جمال يشع",
+                category1Title: "العناية بالوجه والجسم",
+                category1Text: "غذِ بشرتك بتركيباتنا الغنية بالأرغان والألوفيرا لترطيب عميق وإشراقة صحية.",
+                category2Title: "العناية الطبيعية بالشعر",
+                category2Text: "حوّل شعرك بمنتجات مصممة للقوة واللمعان والحيوية، دون مساومة.",
+                category3Title: "عطور ساحرة",
+                category3Text: "دع عطرك يروي قصة من الطبيعة والأناقة مع عطورنا الفريدة.",
+                category4Title: "الحيوية والعافية",
+                category4Text: "ادعم جسمك من الداخل بمكملاتنا الغذائية للحصول على طاقة وصحة مثلى.",
+                categoryButton: "اكتشف المجموعة",
+                whyChooseTitle: "لماذا تختار أرفيا الطبيعة عبر Bloom by Malika؟",
+                benefit1Title: "جودة أصيلة",
+                benefit1Text: "منتجات مصممة بمكونات طبيعية استثنائية: زيت الأرغان والألوفيرا.",
+                benefit2Title: "التزام أخلاقي",
+                benefit2Text: "علامة تجارية تحترم الطبيعة ورفاهيتك، بممارسات مستدامة.",
+                benefit3Title: "سهولة الشراء",
+                benefit3Text: "ادخل بسهولة إلى مجموعة أرفيا الكاملة عبر رابط الانتساب الآمن الخاص بنا.",
+                benefit4Title: "دعم ونصائح",
+                benefit4Text: "استفد من نصائحنا المخصصة لاختيار المنتجات المثالية لطقوسك.",
+                storeTestimonialsTitle: "ماذا يقول عملاؤنا عن منتجاتنا",
+                storeTestimonial1Text: "\"لم تكن بشرتي بهذه الجمال والترطيب من قبل منذ أن بدأت استخدام منتجات العناية بالوجه من أرفيا. أحببت زيت الأرغان حقًا!\"",
+                storeTestimonial1Author: "- أميرة س.، الجزائر",
+                storeTestimonial2Text: "\"شامبوهات أرفيا أعادت الحياة لشعري، أصبح أقوى وأكثر لمعانًا. أنا معجبة بالنتائج الطبيعية.\"",
+                storeTestimonial2Author: "- لينا ك.، الكويت",
+                finalCtaTitle: "هل أنت مستعد(ة) لتحويل روتين جمالك؟",
+                finalCtaText: "انقر أدناه لاستكشاف مجموعة أرفيا الطبيعة الكاملة وابدأ ازدهارك.",
+                finalCtaButton: "أزور متجر أرفيا",
+                footerCopyright: "&copy; 2025 تفتح مع أرفيا لمليكة. جميع الحقوق محفوظة.",
+                footerContact: "اتصل بنا: contact@arveabymalika.com"
+            },
+            en: {
+                pageTitle: "Bloom with ARVEA by Malika - Your Natural Beauty Store",
+                metaDescription: "Discover the ARVEA Nature online store with Bloom by Malika. Explore our natural cosmetics, perfumes, and supplements based on Argan and Aloe Vera. Shop now!",
+                navHome: "Home",
+                navAffiliation: "Affiliation",
+                navCategories: "Categories",
+                navBenefits: "ARVEA Benefits",
+                heroStoreTitle: "Discover Natural Radiance: Your ARVEA Store Awaits!",
+                heroStoreText: "Dive into a world of authentic care based on Argan Oil and Aloe Vera. Quality, purity, and well-being at your fingertips.",
+                heroStoreButton: "Access ARVEA Store",
+                categoriesTitle: "Our ARVEA Essentials: Beauty That Radiates",
+                category1Title: "Face & Body Care",
+                category1Text: "Nourish your skin with our Argan and Aloe Vera-rich formulas for deep hydration and a healthy glow.",
+                category2Title: "Natural Hair Care",
+                category2Text: "Transform your hair with products designed for strength, shine, and vitality, without compromise.",
+                category3Title: "Enchanting Perfumes",
+                category3Text: "Let your scent tell a story of nature and elegance with our unique fragrances.",
+                category4Title: "Vitality and Wellness",
+                category4Text: "Support your body from within with our food supplements for optimal energy and health.",
+                categoryButton: "Discover the range",
+                whyChooseTitle: "Why Choose ARVEA Nature via Bloom by Malika?",
+                benefit1Title: "Authentic Quality",
+                benefit1Text: "Products formulated with exceptional natural ingredients: Argan Oil and Aloe Vera.",
+                benefit2Title: "Ethical Commitment",
+                benefit2Text: "A brand that respects nature and your well-being, with sustainable practices.",
+                benefit3Title: "Simple Shopping",
+                benefit3Text: "Easily access the full ARVEA range via our secure affiliate link.",
+                benefit4Title: "Support & Advice",
+                benefit4Text: "Benefit from our personalized advice to choose the perfect products for your rituals.",
+                storeTestimonialsTitle: "What Our Customers Say About Our Products",
+                storeTestimonial1Text: "\"My skin has never looked so beautiful and hydrated since I started using ARVEA face care products. The Argan oil is a true favorite!\"",
+                storeTestimonial1Author: "- Amira S., Algiers",
+                storeTestimonial2Text: "\"ARVEA shampoos have brought my hair back to life; it's stronger and shinier. I'm impressed by the natural results.\"",
+                storeTestimonial2Author: "- Lina K., Kuwait",
+                finalCtaTitle: "Ready to Transform Your Beauty Routine?",
+                finalCtaText: "Click below to explore the complete ARVEA Nature collection and begin your blooming journey.",
+                finalCtaButton: "I Visit the ARVEA Store",
+                footerCopyright: "&copy; 2025 Bloom with ARVEA by Malika. All rights reserved.",
+                footerContact: "Contact us: contact@arveabymalika.com"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[lang] && translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+            // Update page title and meta description separately as they are in <head>
+            document.title = translations[lang].pageTitle;
+            document.querySelector('meta[name="description"]').setAttribute('content', translations[lang].metaDescription);
+
+
+            // Set text direction for Arabic
+            if (lang === 'ar') {
+                document.body.style.direction = 'rtl';
+                document.body.style.textAlign = 'right';
+            } else {
+                document.body.style.direction = 'ltr';
+                document.body.style.textAlign = 'left';
+            }
+        }
+
+        // Event listeners for language buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.lang-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const lang = event.target.getAttribute('data-lang');
+                    setLanguage(lang);
+                    // Optionally save preferred language to localStorage
+                    localStorage.setItem('preferredLang', lang);
+                });
+            });
+
+            // Load preferred language from localStorage or default to French
+            const savedLang = localStorage.getItem('preferredLang') || 'fr';
+            setLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
